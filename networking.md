@@ -51,3 +51,4 @@ network={
     priority=30
 }
 ```
+5. Power-cycle the raspberry pi, it should automatically connect to any configured, available WiFi network in order of decreasing priority. 
