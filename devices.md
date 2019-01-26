@@ -8,7 +8,7 @@ A number of devices and daemons need to be set up to work with the GPS and magne
 
   Back at the main screen, tab to "Finish" and quit.
 
-1. GPS daemon. In a terminal run the following:
+2. GPS daemon. In a terminal run the following:
   ```
    sudo dpkg-reconfigure gpsd
   ```
