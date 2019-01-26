@@ -9,11 +9,13 @@ A number of devices, permissions, and daemons need to be set up to work with the
   Back at the main screen, tab to "Finish" and quit.
   
 2. I2C permissions. In a terminal run the following:
-```
-    sudo echo 'SUBSYSTEM=="i2c-dev", GROUP="i2cuser", MODE="0660"' > /etc/udev/rules.d/50-i2c.rules
+  ```
+    sudo bash <<EOF
+    echo 'SUBSYSTEM=="i2c-dev", GROUP="i2cuser", MODE="0660"' > /etc/udev/rules.d/50-i2c.rules
+    EOF
     sudo groupadd i2cuser
     sudo adduser pi i2cuser
-```
+  ```
 
 3. GPS daemon. In a terminal run the following:
   ```
