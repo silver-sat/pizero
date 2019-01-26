@@ -2,7 +2,7 @@ A number of devices, permissions, and daemons need to be set up to work with the
 
 1. I2C communication bus. In a terminal run the following:
   ```
-    sudo raspi-config
+sudo raspi-config
   ```
   Navigate to "Advanced Options" and select I2C, select "Enable", "OK", "Yes", "OK". 
 
@@ -19,6 +19,11 @@ sudo adduser pi i2cuser
 
 3. GPS daemon. In a terminal run the following:
   ```
-   sudo dpkg-reconfigure gpsd
+sudo dpkg-reconfigure gpsd
   ```
   Select "Yes", "Yes", type "/dev/ttyAMA0", tab "OK", tab "OK", tab "OK" 
+
+4. Reboot the raspberry pi
+  ```
+sudo /sbin/shutdown -r now
+  ```
